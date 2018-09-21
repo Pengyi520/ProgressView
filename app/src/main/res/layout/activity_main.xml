@@ -1,19 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
 
-
-    <com.example.pengyi.progressview.ProgressView
-        android:id="@+id/progress_view"
-        android:layout_width="150dp"
+    <FrameLayout
+        android:layout_width="0dp"
         android:layout_height="150dp"
-        android:layout_gravity="center"
-        app:progress_width= "3dp"
-        app:diff_radius="30dp"
-        app:bg_color="@color/red"
-        app:progress_color="@color/white"
-        />
-</FrameLayout>
+        android:layout_weight="1">
+
+        <com.example.pengyi.progressview.ProgressView
+            android:id="@+id/progress_view"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            app:bg_color="@color/colorPrimary"
+            app:diff_radius="15dp"
+            app:duration="1000"
+            app:progress_color="@color/white"
+            app:progress_second_color="@color/gray"
+            app:progress_width="3dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开始"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:layout_gravity="center"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_weight="1">
+
+        <com.example.pengyi.progressview.ProgressView
+            android:id="@+id/progress_view2"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            app:bg_color="@color/red"
+            app:diff_radius="15dp"
+            app:duration="1000"
+            app:progress_color="@color/white"
+            app:progress_enable="true"
+            app:progress_second_color="@color/gray"
+            app:progress_width="3dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="结束"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:layout_gravity="center"/>
+    </FrameLayout>
+</LinearLayout>

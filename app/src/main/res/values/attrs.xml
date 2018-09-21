@@ -9,5 +9,11 @@
         <attr name="bg_color" format="color"></attr>
         <!--进度条颜色-->
         <attr name="progress_color" format="color"></attr>
+        <!--进度条背景颜色-->
+        <attr name="progress_second_color" format="color"></attr>
+        <!--进度条转满一圈的耗时 单位毫秒-->
+        <attr name="duration" format="integer"></attr>
+        <!--是否带进度条-->
+        <attr name="progress_enable" format="boolean"></attr>
     </declare-styleable>
 </resources>
