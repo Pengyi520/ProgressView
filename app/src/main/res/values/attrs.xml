@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ProgressView">
+        <!--大小圆半径差-->
+        <attr name="diff_radius" format="dimension"></attr>
+        <!--进度条宽度-->
+        <attr name="progress_width" format="dimension"></attr>
+        <!--圆的背景色-->
+        <attr name="bg_color" format="color"></attr>
+        <!--进度条颜色-->
+        <attr name="progress_color" format="color"></attr>
+    </declare-styleable>
+</resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.example.pengyi.progressview.ProgressView
+        android:id="@+id/progress_view"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        app:progress_width= "3dp"
+        app:diff_radius="30dp"
+        app:bg_color="@color/red"
+        app:progress_color="@color/white"
+        />
+</FrameLayout>
