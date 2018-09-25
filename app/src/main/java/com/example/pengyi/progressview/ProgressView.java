@@ -111,8 +111,8 @@ public class ProgressView extends View {
         progressOval = new RectF(maxDiffRadius, maxDiffRadius, maxDiffRadius + 2 * startRadius,
             maxDiffRadius + 2 * startRadius);
       }
-      canvas.drawArc(progressOval, -90, progress, false, progressPaint);
       canvas.drawArc(progressOval, -90, 360, false, progressSecondPaint);
+      canvas.drawArc(progressOval, -90, progress, false, progressPaint);
       if (progress >= 360) {
         progress = 0;
         isClick = false;
